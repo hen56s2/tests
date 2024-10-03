@@ -8,12 +8,7 @@ local function copyCFrameToClipboard()
         if humanoidRootPart then
             local cframe = humanoidRootPart.CFrame
             setclipboard(tostring(cframe))  -- Copy the CFrame to clipboard
-            print("CFrame copied to clipboard:", cframe)
-        else
-            print("HumanoidRootPart not found")
         end
-    else
-        print("Character not found")
     end
 end
 
